@@ -11,7 +11,6 @@ const Categories = () => {
       *[_type == "category"]
     `).then(data => {
       setCategories(data)
-      console.log(data)
     })
   }, [])
   return (

@@ -13,14 +13,11 @@ const FeaturedRow = ({id, title, description}) => {
       resturants[]->{
         ...,
         dishes[]->{
-          type->{
-            name
-          }
+          ...
         }
       }
     }[0]
     `, {id}).then(data => {
-      console.log(data._type)
       setResturants(data)
     }).catch(errr => {
       console.log(errr)
